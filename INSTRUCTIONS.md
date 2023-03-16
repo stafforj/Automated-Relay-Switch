@@ -46,7 +46,7 @@ The three wires from the AC cable (live - brown, neutral - blue, GND - yellow/gr
 
 ### Cooling fan
 
-The cooling fan operates on 5VDC and 0.36W of power. This results in 72mA of current required from the power supply, which allows for running it directly off the Arduino 5VDC supply pin ($I_{max}\approx800$mA). The red (+5VDC) and black (GND) cables from the axial fan are connected to the relay control board pins which take 5VDC and GND off the Arduino UNO. In this arrangement, the fan rotates when the Arduino is powered on (either through the USB or power supply). Although heat is generated discontinuously through the relay action, providing continuous air cooling within the enclosure is preferred for reliable temperature regulation.  
+The cooling fan operates on 5VDC and 0.36W of power. This results in 72mA of current required from the power supply, which allows for running it directly off the Arduino 5VDC supply pin ($I_{max} \approx 800$mA). The red (+5VDC) and black (GND) cables from the axial fan are connected to the relay control board pins which take 5VDC and GND off the Arduino UNO. In this arrangement, the fan rotates when the Arduino is powered on (either through the USB or power supply). Although heat is generated discontinuously through the relay action, providing continuous air cooling within the enclosure is preferred for reliable temperature regulation.  
 
 ![DC connections between Fan and Relay PCB/Arduino](./Images/internals-fan.png)
 
