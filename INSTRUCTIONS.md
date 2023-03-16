@@ -2,7 +2,7 @@
 
 ### Operating Principles
 
-The core components in the build are the relay and microcontroller. The relay on the control board is an electromagnetic switch. Sending 5VDC to the relay energises the internal coil, mechanically switching its state from Normally-Open (NO) to a closed circuit $^*$. This process is automated using a programmable microcontroller to send this 5VDC signal to the relay at specific times.
+The core components in the build are the relay and microcontroller. The relay on the control board is an electromagnetic switch. Sending 5VDC to the relay energises the internal coil, mechanically switching its state from Normally-Open (NO) to a closed circuit $^*$. This process is automated using a programmable microcontroller which sends a 5VDC signal to the relay at specific times. All the circuitry has been placed within an enclosure to prevent access to the high AC voltages.
 
 $^*$ Note that the relay used in this build can also be wired for a Normally-Closed state if required (with lower current limits of 10A). 
 
@@ -25,7 +25,7 @@ $^*$ Note that the relay used in this build can also be wired for a Normally-Clo
 
 ## Modifications
 
-The only modification required is to the DIN enclosure. This is to provide cooling to the electronics, particularly if the relay is controlling a high current load (~ 10-20A) for long periods (> 2 mins) at a time. Holes were drilled on either side of the enclosure to allow air to pass through and across the relay board. The choice of perforated walls with small (~ 3 - 5mm diameter) holes allows air to flow through while preventing the risk of users contacting the AC circuit inside the box. A miniature axial fan (30mm x 30mm x 7mm, $Q_{max} = 3.7$ CFM) was mounted to the inside of the enclosure with the outlet against the perforated enclosure wall. To prevent hot air leaking back into the enclosure at the fan outlet, masking tape (the blue coloured tape in the images) was placed around the fan housing and against the enclosure wall. The fan operates in "pull-mode" in this arrangement, drawing in cool external air that heats up and is then expelled from the outlet.  
+The only modification required is to the DIN enclosure. This is to provide cooling to the electronics, particularly if the relay is controlling a high current load (~ 10-20A) for long periods (> 2 mins) at a time. Holes were drilled on either side of the enclosure to allow air to pass through and across the relay board. The choice of perforated walls with small (~ 3 - 5mm diameter) holes allows air to flow through while preventing the risk of users contacting the AC circuit inside the box. A miniature axial fan (30mm x 30mm x 7mm, $Q_{max} = 3.7$ CFM) was mounted to the inside of the enclosure with the outlet against the perforated enclosure wall. To prevent hot air leaking back into the enclosure at the fan outlet, masking tape (the blue coloured tape in the images) was placed around the fan housing and against the enclosure wall. The fan operates in "pull-mode" in this arrangement, drawing in cool external air that heats up and is then expelled from the outlet. Two  large Holes were also driled in 
 
 ![Modifications for air cooling](./Images/enclosure-perforations.png)
 
@@ -34,7 +34,7 @@ The only modification required is to the DIN enclosure. This is to provide cooli
 
 ### Relay to Arduino
 
-To be completed
+The relay control board requires +5VDC, GND and a signal (4-6VDC) to actuate the switch. The +5VDC and GND are connected to the pins of the Ardunio using yellow and orange cables in the image below. Pin 13 of the Arduino is connected to the signal pin of the relay control board (green cable) and used to deliver a 5VDC signal for actuating the switch.
 
 ![DC connections between Relay and Arduino](./Images/internals-DC.png)
 
