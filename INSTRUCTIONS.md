@@ -13,6 +13,10 @@ The approach is an extension of what is described...
 |[Arduino](https://uk.rs-online.com/web/p/arduino/7154081)|1  |Arduino UNO microcontroller|
 |[Relay Control Kit](https://www.sparkfun.com/products/13815)|1  |Beefcake relay control kit for high current AC switching.|
 |[Axial fan](https://uk.farnell.com/sunon/mc30060v2-0000-a99/fan-30x30x6-9mm-5vdc/dp/1924848)|1  |For actively cooling the electronics inside the enclosure.|
+|3-core cable|1  |Length depending on requirements for the relay switch. 1.5 mm$^2$ copper cores, or selected based on current requirements.|
+|3-pin plug|1  |For connecting to mains AC supply.|
+|3-pin socket|1 |For receiving the 3-pin plug of the device that will be controlled.|
+|Jumper wire cables|10  |100-200mm length. For connecting Arduino pins to relay pcb.|
 |M4 Screws|4  |10 mm long, for mounting fan to enclosure.|
 |M3 standoffs and screws|2  |10 mm long, for mounting the relay pcb above the Arduino UNO.|
 |Misc.|   | <ul><li>Wiring and heat shrink</li><li>Soldering Iron and solder</li><li>Glue</li><li>Electrical hand drill and 3-5mm drill bits</li><li>Masking tape</li></ul>|
