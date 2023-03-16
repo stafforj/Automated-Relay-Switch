@@ -13,16 +13,9 @@ The approach is an extension of what is described...
 |[Arduino](https://uk.rs-online.com/web/p/arduino/7154081)|1  |Arduino UNO microcontroller|
 |[Relay Control Kit](https://www.sparkfun.com/products/13815)|1  |Beefcake relay control kit for high current AC switching.|
 |[Axial fan](https://uk.farnell.com/sunon/mc30060v2-0000-a99/fan-30x30x6-9mm-5vdc/dp/1924848)|1  |For actively cooling the electronics inside the enclosure.|
-|M3 Screws|6  |10 mm long, for holding down the Dimmer and Arduino.|
-|M3 Low Profile Screws + Nuts|2  |10 mm long, for holding the Encoder in place.|
-|M2.5 Screws + Nuts (Optional)|4  |To keep the Screen bolted onto the lid.|
-|M4 Screws (Optional)|5  |10 - 15 mm long, to keep the lid shut on.|
-|Blender Box (Optional)|1  |Bottom of the box. To keep the electronics isolated.|
-|Button Post (Optional)|1  |Long post so the button can be pressed. Could be replaced by placing the button on the lid.|
-|Blender Box Lid (Optional)|1  |Lid of the box.|
-|Encoder Cylinder (Optional)|1  |Encoder Cylinder, to hold the Encoder Strip. PLA is transparent to IR.|
-|Encoder Strip |1  |One to two Gaps in the encoder strip is the maximum for high speed control (<20'000 rpm)|
-|Misc.|   | <ul><li>Hot glue gun or CA glue.</li><li>Wiring and heat shrink</li><li>Soldering Iron</li><li>AC can be quite dangerous, so its best to keep them away by encasing them in an electronics box. f3d files from this project are included in the folder labeled CAD feel free to use it or make your own.</li></ul>|
+|M4 Screws|4  |10 mm long, for mounting fan to enclosure.|
+|M3 standoffs and screws|2  |10 mm long, for mounting the relay pcb above the Arduino UNO.|
+|Misc.|   | <ul><li>Wiring and heat shrink</li><li>Soldering Iron and solder</li><li>Glue</li><li>Electrical hand drill and 3-5mm drill bits</li></ul>|
 
 ## Modifications
 
