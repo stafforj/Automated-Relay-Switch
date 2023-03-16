@@ -16,7 +16,7 @@ The approach is an extension of what is described...
 |3-core cable|1  |Length depending on requirements for the relay switch. 1.5 mm$^2$ copper cores, or selected based on current requirements.|
 |3-pin plug|1  |For connecting to mains AC supply.|
 |3-pin socket|1 |For receiving the 3-pin plug of the device that will be controlled.|
-|Jumper wire cables|10  |100-200mm length. For connecting Arduino pins to relay pcb.|
+|Jumper wire cables|3  |100-200mm length. For connecting Arduino pins to relay pcb.|
 |M4 Screws|4  |10 mm long, for mounting fan to enclosure.|
 |M3 standoffs and screws|2  |10 mm long, for mounting the relay pcb above the Arduino UNO.|
 |Misc.|   | <ul><li>Wiring and heat shrink</li><li>Soldering Iron and solder</li><li>Glue</li><li>Electrical hand drill and 3-5mm drill bits</li><li>Masking tape</li></ul>|
