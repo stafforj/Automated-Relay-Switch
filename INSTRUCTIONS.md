@@ -9,13 +9,10 @@ The approach is an extension of what is described...
 
 |Name               |QTY|Description                           |
 |:------------------|:-:|:-------------------------------------|
-|[Blender](https://www.kenwoodworld.com/en-gb/blend-x-compact-blp31-d0wg/p/BLP31.D0WG)|1  |600W Kenwood BLP.D0WG|
-|[Arduino](https://www.sparkfun.com/products/12640)|1  |Pro Micro (Leonardo based, ATmega32U4)|
-|[Dimmer Module](https://www.ebay.co.uk/itm/115506248106?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338364432&toolid=11000&_ul=UK&customid=EAIaIQobChMIq-2ml5Py-wIVS57tCh3bXgB5EAQYECABEgJU6vD_BwE&gclid=EAIaIQobChMIq-2ml5Py-wIVS57tCh3bXgB5EAQYECABEgJU6vD_BwE)|1  |Dimmer circuit with optocoupler to isolate live AC from the arduino.|
-|Button             |1  |To stop, start and restart processing.|
-|LED                |1  |Quick indicator for displaying status.|
-|[Light Encoder](https://thepihut.com/products/photo-interrupter-sensor)|1  |For measuring speed, more accurately known as a photo-interrupt sensor. You could easily swap this out with a hall effect sensor.|
-|[0.96" OLED I2C Screen](https://www.amazon.co.uk/Display-ARCELI-Characters-Compatible-Raspberry-blue/dp/B09P8DDXZ8/ref=asc_df_B09P8DDXZ8/?tag=googshopuk-21&linkCode=df0&hvadid=570428249641&hvpos=&hvnetw=g&hvrand=12641479531537806638&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9045466&hvtargid=pla-1639324494446&psc=1)|1  |For a more detailed readout of the current status.|
+|[DIN enclosure](https://uk.rs-online.com/web/p/cases-for-arduino/8607599)|1  |DIN enclosure for Arduino UNO with transparent window. |
+|[Arduino](https://uk.rs-online.com/web/p/arduino/7154081)|1  |Arduino UNO microcontroller|
+|[Relay Control Kit](https://www.sparkfun.com/products/13815)|1  |Beefcake relay control kit for high current AC switching.|
+|[Axial fan](https://uk.farnell.com/sunon/mc30060v2-0000-a99/fan-30x30x6-9mm-5vdc/dp/1924848)|1  |For actively cooling the electronics inside the enclosure.|
 |M3 Screws|6  |10 mm long, for holding down the Dimmer and Arduino.|
 |M3 Low Profile Screws + Nuts|2  |10 mm long, for holding the Encoder in place.|
 |M2.5 Screws + Nuts (Optional)|4  |To keep the Screen bolted onto the lid.|
