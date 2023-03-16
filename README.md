@@ -1,6 +1,8 @@
 # Automated-Relay-Switch
 
  _An arduino-controlled relay for automatically switching AC voltage supply on and off at user-defined time intervals and durations. Included are the build notes. Part of the Open Science Framework repository [Open2DM](https://osf.io/evupy/)_
+ 
+![Modifications For Encoder](./Images/Encoder_Location_&_Modifications.png)
 
 ### Background \& Motivation
 
