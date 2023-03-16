@@ -55,8 +55,9 @@ The cooling fan operates on 5VDC and 0.36W of power. This results in 72mA of cur
 
 ## Arduino Code
 
-The arduino code for uploading to the Arduino UNO microcontrolled is located in `/Code/relay-switch.ino`. This contains a routine which turns the relay from the default open circuit (Normally-Open) to closed circuit where the outlet plug will be energised with AC from the source (in our case, single-phase 240VAC at the wall socket).
+The arduino code for uploading to the Arduino UNO microcontroller is located in `/Code/relay-switch.ino`. This contains a routine which turns the relay from the default open circuit (Normally-Open) to closed circuit where the outlet plug will be energised with AC from the source (in our case, single-phase 240VAC).
 
+First, the signal pin is set as an output. Here, we use `LED_BUILTIN` as the signal pin which is pin 13 on the Arduino UNO.
 
 ```
 void setup() {
@@ -65,5 +66,22 @@ void setup() {
 }
 ```
 
+The remainder of the code involves setting up the time intervals and switching duration. These define how long the relay will switch `on` and `off` for (in milliseconds). And the switching duration is expressed by a total ON time `t` which is limited in the for loop to be less than a user-defined value (e.g., `t<1800000`. In this example, the AC circuit is energised for 1 minute, turns off for 2 minutes, and will operate for a total on time of 30 minutes. After this the, the loop exits and the relay returns to the default NO state permanently.   
+
+```
+void loop() {
+  long on=60000;      // Sets 'on' time
+  long off=120000;    // Sets 'off' time
+// test loop function for setting a total 'on' time
+  for (long t=0; t<1800000; t=t+on) {    // Sets the loop to run until total ON time (ms) is met - adds the ON time after each iteration (1800000 = 30 mins)
+    digitalWrite(LED_BUILTIN, HIGH);    // Close the circuit - Homogeniser turns ON for 'on' seconds
+    delay(on);                          // Wait for 'on' milliseconds
+    digitalWrite(LED_BUILTIN, LOW);     // returns relay to NO - Homogeniser OFF for 'off' seconds
+    delay(off);                         // Wait for 'off' milliseconds
+    Serial.println(""); 
+   }
+  
+  exit(0);  // exits the loop() or the code just repeats itself forever
+```
 
 
