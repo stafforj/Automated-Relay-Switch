@@ -2,7 +2,9 @@
 
 ### Operating Principles
 
-The approach is an extension of what is described...
+The core components in the build are the relay and microcontroller. The relay on the control board is an electromagnetic switch. Sending 5VDC to the relay energises the internal coil, mechanically switching its state from Normally-Open (NO) to a closed circuit$^*$. This process is automated using a programmable microcontroller to send this 5VDC signal to the relay at specific times.
+
+$^*$ Note that the relay used in this build can also be wired for a Normally-Closed state if required (with lower current limits of 10A). 
 
 
 ## Bill of Materials
@@ -53,12 +55,13 @@ To be completed
 
 ## Arduino Code
 
-The arduino code for uploading to the Arduino UNO microcontrolled is located in `/Code/relay-switch.ino`. This contains a routine which turns the relay from the default open circuit (Normally-Open) to closed circuit where the outlet plug will be energised with AC.
+The arduino code for uploading to the Arduino UNO microcontrolled is located in `/Code/relay-switch.ino`. This contains a routine which turns the relay from the default open circuit (Normally-Open) to closed circuit where the outlet plug will be energised with AC from the source (in our case, single-phase 240VAC at the wall socket).
 
 
 ```
-void UpdateCount() {
-  COUNT++;
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 ```
 
