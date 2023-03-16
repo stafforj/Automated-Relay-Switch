@@ -31,7 +31,7 @@ The approach is an extension of what is described...
 
 The only modification required is to the DIN enclosure. This is to provide cooling to the electronics, particularly if the relay is controlling a high current load (~10-20A) for long periods (> 2 mins) at a time. Holes were drilled on either side of the enclosure to allow air to pass through and across the relay board. The choice of perforated walls with small (~3mm diameter) holes allows air to flow through while preventing the risk of users contacting the AC circuit inside the box. A miniature axial fan (30mm x 30mm x 7mm, Q_{max} = 3.7 CFM) was mounted to the inside of the enclosure with the outlet against the perforated enclosure wall. The fan operates in "pull-mode" in this arrangement, drawing in cool external air that heats up and is then expelled from the outlet.  
 
-![Modifications For Encoder](./Images/Encoder_Location_&_Modifications.png)
+![Modifications for air cooling](./Images/enclosure-perforations.png)
 
 
 ## Wiring
@@ -40,13 +40,19 @@ The only modification required is to the DIN enclosure. This is to provide cooli
 
 GGG
 
+![DC connections between Relay and Arduino](./Images/internals-DC.png)
+
 ### AC supply to Relay
 
 GGG
 
+![AC connections to Relay](./Images/internals-AC.png)
+
 ### Cooling fan
 
 GGG
+
+![DC connections between Fan and Relay PCB/Arduino](./Images/internals-fan.png)
 
 
 
