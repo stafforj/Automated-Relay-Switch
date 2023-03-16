@@ -6,9 +6,12 @@
 
 _This is part of the [Open2DM](https://osf.io/evupy/) labware project._
 
-For our group's research on synthesing two-dimensional materials (e.g., Graphene, MoS2, h-BN, etc.), we required a shear mixing process to operate at  discrete on-off time intervals. We also required our tests to stop at   
+For our group's research on synthesing two-dimensional materials (e.g., Graphene, MoS2, h-BN, etc.), we required a shear mixing process to operate at  discrete on-off time intervals. We also required our tests to finish after specific processing times (test duration). These processes are operated for hours in some instances, and implementing a simple form of automation reduces the manual efforts for the researcher. 
 
-This repository provides the build details and code for creating a relay that can automatically switch between the default Normally-Open (NO) state to a closed circuit, supplying the AC from the wall socket (240V). The  at a predifined time interval.  
+This repository provides the build details and code for creating a relay that can automatically switch between a default Normally-Open (NO) state to a closed circuit, supplying AC from the wall socket (240V) to the device.
+
+Although this was our motivation, it is worth highlighting that the relay can be used for any application where there is a need to switch AC in a controlled way (e.g., lighting, motors, etc.). The limitations for the chosen application are a maximum of 20A and 220VAC for this Normally-Open (NO) state.     
+
 
 ### Disclaimer!
 
