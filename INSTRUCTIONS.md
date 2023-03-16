@@ -61,7 +61,6 @@ First, the signal pin is set as an output. Here, we use `LED_BUILTIN` as the sig
 
 ```
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 }
 ```
@@ -70,18 +69,18 @@ The remainder of the code involves setting up the time intervals and switching d
 
 ```
 void loop() {
-  long on=60000;      // Sets 'on' time
-  long off=120000;    // Sets 'off' time
-// test loop function for setting a total 'on' time
-  for (long t=0; t<1800000; t=t+on) {    // Sets the loop to run until total ON time (ms) is met - adds the ON time after each iteration (1800000 = 30 mins)
-    digitalWrite(LED_BUILTIN, HIGH);    // Close the circuit - Homogeniser turns ON for 'on' seconds
-    delay(on);                          // Wait for 'on' milliseconds
-    digitalWrite(LED_BUILTIN, LOW);     // returns relay to NO - Homogeniser OFF for 'off' seconds
-    delay(off);                         // Wait for 'off' milliseconds
+  long on=60000;      
+  long off=120000;    
+
+  for (long t=0; t<1800000; t=t+on) {    
+    digitalWrite(LED_BUILTIN, HIGH);    
+    delay(on);                          
+    digitalWrite(LED_BUILTIN, LOW);     
+    delay(off);                         
     Serial.println(""); 
    }
   
-  exit(0);  // exits the loop() or the code just repeats itself forever
+  exit(0); 
 ```
 
 
