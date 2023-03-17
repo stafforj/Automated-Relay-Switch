@@ -65,7 +65,7 @@ void setup() {
 }
 ```
 
-The remainder of the code involves setting up the time intervals and switching duration. These define how long the relay will switch `on` and `off` for (in milliseconds). And the switching duration is expressed by a total ON time `t` which is limited in the for loop to be less than a user-defined value (e.g., `t<1800000`. The relay is actuated by sending pin 13 `HIGH` (5VDC) and returned to NO by sending pin 13 `LOW`. In this example, the AC circuit is energised for 1 minute, turns off for 2 minutes, and will operate for a total on time of 30 minutes. Once this target duration of 30 mins is reached, the loop exits and the relay returns to the default NO state permanently.   
+The remainder of the code involves setting up the time intervals and switching duration. These define how long the relay will switch `on` and `off` for (in milliseconds). And the switching duration is expressed by a total ON time `t` which is limited in the for loop to be less than a user-defined value (e.g., `t<1800000`). The relay is actuated by sending pin 13 `HIGH` (5VDC) and returned to NO by sending pin 13 `LOW`. In this example, the AC circuit is energised for 1 minute, turns off for 2 minutes, and will operate for a total ON time of 30 minutes. Once this target duration of 30 mins is reached, the loop exits and the relay returns to the default NO state permanently.   
 
 ```
 void loop() {
