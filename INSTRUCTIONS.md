@@ -55,7 +55,7 @@ The cooling fan operates on 5VDC and 0.36W of power. This results in 72mA of cur
 
 ## Arduino Code
 
-The arduino code for uploading to the Arduino UNO microcontroller is located in `/Code/relay-switch.ino`. This contains a routine which turns the relay from the default open circuit (Normally-Open) to closed circuit where the outlet plug will be energised with AC from the source (in our case, single-phase 240VAC).
+The arduino code for uploading to the Arduino UNO microcontroller is located in `/Code/relay-switch.ino`. This contains a routine which turns the relay from the default open circuit (Normally-Open) to closed circuit where the outlet plug will be energised with AC from the source (in our case, single-phase 230VAC).
 
 First, the signal pin is set as an output. Here, we use `LED_BUILTIN` as the signal pin which is pin 13 on the Arduino UNO.
 
