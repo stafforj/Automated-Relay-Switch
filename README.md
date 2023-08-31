@@ -1,12 +1,12 @@
 # Automated-Relay-Switch
 
- _An arduino-controlled relay for automatically switching AC voltage supply on and off at user-defined time intervals and durations. Included are the build notes. Part of the Open Science Framework repository [Open2DM](https://osf.io/evupy/)_
+ _An arduino-controlled relay for automatically switching AC voltage supply on and off at user-defined time intervals and durations. Included are the build notes. Part of the Open Science Framework repository [OpenLPE](https://osf.io/evupy/)_
  
 ![DIN-mounted Arduino-controlled relay switch](./Images/din-mounted-arduino-relay.png)
 
 ### Background \& Motivation
 
-_This is part of the [Open2DM](https://osf.io/evupy/) labware project._
+_This is part of the [OpenLPE](https://osf.io/evupy/) labware project._
 
 For our group's research on synthesing two-dimensional materials (e.g., Graphene, MoS2, h-BN, etc.), we required a shear mixing process to operate at  discrete on-off time intervals. We also required our tests to finish after specific processing times (test duration). These processes are operated for hours in some instances, and implementing a simple form of automation reduces the manual efforts for the researcher. 
 
